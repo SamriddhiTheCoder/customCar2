@@ -11,6 +11,11 @@ AFRAME.registerComponent('car', {
                 this.el.setAttribute('rotation', rotation)
             } else if(this.data.clickCounter === 2){
                 const rotation = {x: 0, y: 100, z: 0}
+            } else {
+            const cameraEl = document.querySelector("#camera");
+            const position = { x: 0, y: 50, z: 250 };
+            cameraEl.setAttribute("position", position);
+            this.data.clickCounter = 0;
             }
         })
     }
