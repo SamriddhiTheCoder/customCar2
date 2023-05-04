@@ -13,7 +13,7 @@ AFRAME.registerComponent('car', {
                 const rotation = {x: 0, y: 100, z: 0}
             } else {
             const cameraEl = document.querySelector("#camera");
-            const position = { x: 0, y: 50, z: 250 };
+            const position = { x: 0, y: 2, z: -2};
             cameraEl.setAttribute("position", position);
             this.data.clickCounter = 0;
             }
